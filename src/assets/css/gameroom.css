@@ -1,0 +1,238 @@
+.volume.off.icon {
+  display: none;
+}
+
+#player1icon {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  margin-bottom: 10vmin !important;
+}
+
+#player2icon {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  margin-bottom: 9vmin !important;
+}
+
+.playerTitleHolder {
+  text-align: center;
+  color: black !important;
+  font-family: "Goudy Bookletter 1911" !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player1Title {
+  color: red !important;
+  font-weight: bold;
+}
+
+.player2Title {
+  color: blue !important;
+  font-weight: bold;
+}
+
+.volume {
+  position: relative;
+}
+.volumeicon {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  padding: 0 !important;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.pushable {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0em !important;
+}
+
+.bgimage {
+  background-image: url("../images/bg3.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  z-index: 5;
+}
+
+.player1 > .card {
+  width: 9vmin;
+  height: 9vmin;
+  background-color: red;
+  opacity: 1;
+  font-size: 6vmin;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.player1 > .card > img,
+.player2 > .card > img {
+  width: 9vmin;
+  height: 9vmin;
+  font-size: 6vmin;
+  opacity: 1;
+}
+
+.player2 > .card {
+  width: 9vmin;
+  height: 9vmin;
+  background-color: #0066cc;
+  font-size: 6vmin;
+  box-shadow: 3px 3px black;
+  opacity: 1;
+}
+
+#board {
+  margin: 2em auto;
+  width: 72vmin;
+  height: 72vmin;
+  display: grid;
+  grid-template-columns: repeat(6, 12vmin);
+  grid-template-rows: repeat(6, 12vmin);
+}
+
+#board div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+}
+
+.ui.four.wide.column > h2 {
+  color: black !important;
+  text-align: center !important;
+  font-family: "Goudy Bookletter 1911" !important;
+}
+
+.modalheader {
+  text-align: center !important;
+}
+.modalimage {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.player1turn {
+  background-color: red !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12vmin !important;
+  height: 12vmin !important;
+}
+
+.deadCardCollection {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 30vmin !important;
+  margin-top: 5vmin !important;
+}
+
+.player1deadfigures {
+  width: 7vmin;
+  height: 7vmin;
+  background-color: red;
+  opacity: 0.6;
+  margin: 10px;
+  font-size: 4vmin;
+  box-shadow: 2px 2px 2px 1px black;
+}
+.player2deadfigures {
+  width: 7vmin;
+  height: 7vmin;
+  background-color: #0066cc;
+  opacity: 0.6;
+  margin: 10px;
+  font-size: 4vmin;
+  box-shadow: 2px 2px 2px 1px black;
+}
+.deadIcons > div > div > img {
+  width: 5vmin !important;
+  height: 5vmin !important;
+}
+
+.player2turn {
+  background-color: blue !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12vmin !important;
+  height: 12vmin !important;
+}
+
+.players {
+  border: 3px solid black !important;
+  margin-bottom: 10px !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12vmin !important;
+  height: 12vmin !important;
+}
+
+.player1,
+.empty,
+.player2 {
+  background-color: green;
+  color: #fff;
+  background-image: url("../images/grass.jpg");
+}
+.divtopmargin {
+  margin-top: 1em !important;
+}
+
+.ui.tiny.image > img {
+  width: 10vmin !important;
+  height: 10vmin !important;
+  margin-left: 5px;
+  margin-top: 1em !important;
+}
+
+.ui.items {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 2em !important;
+  width: 50vmin !important;
+  height: 17vmin !important;
+  border: 2px solid black;
+  background-color: grey;
+}
+
+.card > .deadimg {
+  width: 7vmin;
+  height: 7vmin;
+  font-size: 6vmin;
+  opacity: 1;
+}
+
+.figureNameTitle {
+  font-size: 3vmin !important;
+}
+
+.figureDesc > p {
+  color: black !important;
+  font-size: 2.2vmin !important;
+  text-align: left;
+}
+
+.figureDesc > p > span {
+  color: black !important;
+  font-size: 2.4vmin !important;
+  text-align: left;
+  font-weight: bold;
+}
+
+.white {
+  background-color: #fff;
+  color: #000;
+}
+
+.gamebtn {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  margin-top: 10px !important;
+}

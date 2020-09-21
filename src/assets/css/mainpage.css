@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Bookletter+1911&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.volume.off.icon {
+  display: none;
+}
+
+.pushable {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0em !important;
+}
+
+.lowered {
+  margin-top: 2em;
+}
+
+.wider {
+  width: 60%;
+}
+
+.bgimage {
+  background-image: url("../images/bg3.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  z-index: 5;
+}
+
+.ui.table thead th {
+  background: white;
+}
+
+h2 {
+  font-family: "Goudy Bookletter 1911" !important;
+  font-size: 1.8em !important;
+  color: white !important;
+}
+
+.idtitle {
+  font-family: "Cormorant SC" !important;
+  font-size: 2em !important;
+  color: white !important;
+}
+.strategoheader {
+  font-family: "Cormorant SC" !important;
+  font-weight: bold;
+  font-size: 4em !important;
+  color: #daa520 !important;
+}
+
+.subtitle {
+  font-family: "Cormorant SC" !important;
+  font-size: 2em !important;
+  color: #daa520 !important;
+}
+
+.startgame {
+  font-family: "Cormorant SC" !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  background-color: #daa520 !important;
+  border: 2px solid black !important;
+  margin-bottom: 6em !important;
+  font-size: 1.5em !important;
+}
+
+.ui.three.column.internally.celled.grid {
+  margin-top: 5em !important;
+}
+
+.ui.two.column.internally.celled.grid {
+  margin-top: 5em !important;
+}
+
+.content {
+  font-family: "Goudy Bookletter 1911" !important;
+  font-size: 1.1em !important;
+}
+span {
+  color: #daa520 !important;
+}
+
+.endgame {
+  font-family: "Cormorant SC" !important;
+  font-size: 2em !important;
+  color: #daa520 !important;
+}
+
+.end {
+  padding: 0 5em 5em 5em;
+  font-family: "Goudy Bookletter 1911" !important;
+  font-size: 1.1em !important;
+}
+
+.connectgame,
+.ui.input {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  padding: 20px;
+  font-family: "Cormorant SC" !important;
+  font-size: 1.2em !important;
+}
+
+.ui.inverted.header {
+  color: white;
+  text-align: center;
+}

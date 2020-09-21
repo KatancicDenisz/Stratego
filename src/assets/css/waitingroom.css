@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.pushable {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0em !important;
+}
+
+.volume.off.icon {
+  display: none;
+}
+
+.volume {
+  position: relative;
+}
+.volumeicon {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  padding: 0 !important;
+}
+
+.bgimage {
+  background-image: url("../images/bg3.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  z-index: 5;
+}
+
+.title {
+  margin-top: 50px !important;
+  margin-bottom: 2em !important;
+  text-align: center !important;
+  font-size: 4em !important;
+  font-family: "Cormorant SC" !important;
+}
+
+.ui.very.padded.center.aligned.segment {
+  border: 1px solid black;
+  width: 30em;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.btnfont {
+  font-family: "Cormorant SC" !important;
+  font-size: 1.5em !important;
+}
+.roomid-title {
+  font-size: 3em !important;
+  color: black !important;
+  font-family: "Cormorant SC" !important;
+}
+
+.roomid {
+  margin-bottom: 1em !important;
+  font-size: 4em !important;
+  color: red !important;
+  font-family: "Goudy Bookletter 1911" !important;
+}

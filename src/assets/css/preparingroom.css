@@ -1,0 +1,248 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+.volume.off.icon {
+  display: none;
+}
+
+.volume {
+  position: relative;
+}
+.volumeicon {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  padding: 0 !important;
+}
+
+.pushable {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0em !important;
+}
+
+.bgimage {
+  background-image: url("../images/bg3.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  z-index: 5;
+}
+
+.ui.table thead th {
+  background: white;
+}
+
+.ui.celled.table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+.ui.celled.table {
+  margin-top: 1em;
+  width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/ground.png");
+}
+
+td {
+  height: 80px;
+}
+
+.rank {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.prtitle {
+  text-align: center;
+  font-size: 50px;
+  margin: 0.7em !important;
+  font-family: "Cormorant SC" !important;
+}
+
+.bg {
+  width: 9vmin;
+  height: 9vmin;
+  background-color: red;
+  opacity: 1;
+  font-size: 6vmin;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.asd {
+  width: 9vmin;
+  height: 9vmin;
+}
+
+.description,
+.power {
+  text-align: center;
+}
+.power {
+  font-size: 50px !important;
+  color: black !important;
+}
+
+.copyright {
+  bottom: 0px;
+  left: 0px;
+  width: 2em;
+  height: 1em;
+  display: none !important;
+}
+
+/*.ui.slide.masked.reveal.image,
+.flag,
+.bomb {
+  background-color: #ff1a1a !important;
+}*/
+
+.contentColorElse {
+  background-color: white !important;
+  color: red;
+  border: 1px solid red !important;
+}
+
+.contentColor0 {
+  color: black;
+  border: 1px solid grey !important;
+}
+
+.ui.center.aligned.segment {
+  border: 1px solid black;
+  margin-top: 1em !important;
+}
+
+.ui.card > .content,
+.ui.cards > .card > .content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ui.card {
+  max-width: 5em;
+}
+
+.notSelectedCard {
+  opacity: 0.6 !important;
+}
+
+.selectedCard {
+  opacity: 1 !important;
+}
+
+.ready {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 20vmin;
+  font-size: 2.6vmin !important;
+  float: left !important;
+}
+
+.delete {
+  float: right !important;
+  width: 25vmin;
+  font-size: 2.5vmin !important;
+}
+
+.player1 > .card {
+  width: 9vmin;
+  height: 9vmin;
+  background-color: red;
+  opacity: 1;
+  font-size: 6vmin;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.player1 > .card > img,
+.player2 > .card > img {
+  width: 9vmin;
+  height: 9vmin;
+  font-size: 6vmin;
+  opacity: 1;
+}
+.icontWithContext {
+  width: 9vmin;
+  height: 9vmin;
+  font-size: 6vmin;
+}
+
+.contextMenuDelete {
+  border: 1px solid black;
+  background-color: white;
+  font-size: 2vmin;
+  font-weight: bold;
+  padding: 5px;
+  color: black;
+  width: 10vmin;
+}
+
+.contextMenuDelete > img {
+  width: 3vmin;
+  height: 3vmin;
+}
+
+.allowedTile {
+  background-image: none;
+  background-color: chartreuse !important;
+}
+.notAllowedTile {
+  font-size: 8vmin;
+  color: black;
+  width: 6.5vmin;
+  height: 8vmin;
+}
+
+.notEnoughCount {
+  background-color: grey !important;
+}
+
+.player2 > .card {
+  width: 9vmin;
+  height: 9vmin;
+  background-color: #0066cc;
+  font-size: 6vmin;
+  box-shadow: 3px 3px black;
+  opacity: 1;
+}
+
+#board {
+  margin: 2em auto;
+  width: 72vmin;
+  height: 72vmin;
+  display: grid;
+  grid-template-columns: repeat(6, 12vmin);
+  grid-template-rows: repeat(6, 12vmin);
+}
+
+#board div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+  /*.ui.celled.table {
+    width: 30em;
+    height: 10em;
+  }
+  td {
+    height: 40px;
+  }*/
+
+  .ui.fluid.cards {
+    max-width: 3em;
+  }
+
+  .rank {
+    font-size: 0.8em;
+  }
+  .description {
+    font-size: 0.7em;
+  }
+}
