@@ -5,6 +5,9 @@ The game was originally designed with socket.io to be a real time multiplayer ga
 
 ![Statego splash screen](./example_images/st1.PNG)
 
+## Images and video walkthrough
+Example images and a video walkthrough are in the example_images folder
+
 ## Installing and running project
 
 Before you install the project, make sure, that your computer has nodejs,npm installed.
