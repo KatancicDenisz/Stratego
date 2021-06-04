@@ -3,7 +3,7 @@ Stratego is a strategy war board game for two players on a board of 10×10 squar
 
 The game was originally designed with socket.io to be a real time multiplayer game, but because this was a school project the teacher revoked the server side of the app, thus I had to modify the game to a non real time application. In the near future I want to implement my own backend with socket.io to be able to play the game real time.
 
-![Statego splash screen](st1.PNG)
+![Statego splash screen](./example_images/st1.PNG)
 
 ## Installing and running project
 
