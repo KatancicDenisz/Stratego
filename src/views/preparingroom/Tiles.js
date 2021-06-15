@@ -6,20 +6,11 @@ import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
 //import { setCardsCollection } from "../../state/preparingroom/actions.js";
 //import { useDispatch, useSelector } from "react-redux";
 
-export function Tiles({
-  onClick,
-  boardTile,
-  setContextMenuDelete,
-  selectedFigure,
-}) {
+export function Tiles({ onClick, boardTile }) {
   //const cardsCollection = useSelector((state) => state.cardsCollection);
   //const dispatch = useDispatch();
   const handleContextDelete = () => {
-    // console.log(boardTile.id);
-    //console.log(selectedFigure);
-    //console.log(boardTile.x + " " + boardTile.y);
-    //console.log(cardsCollection);
-    //setContextMenuDelete({ x: boardTile.x, y: boardTile.y });
+    console.log("delete");
   };
 
   return (
@@ -32,7 +23,7 @@ export function Tiles({
       {boardTile.wasSelected ? (
         <div className="bg">
           <ContextMenuTrigger id={"" + boardTile.id}>
-            <div className="asd">
+            <div className="contextMenuWrap">
               {boardTile.power === 0 ? (
                 <img
                   className="icontWithContext"

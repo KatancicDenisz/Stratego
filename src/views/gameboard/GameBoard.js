@@ -30,10 +30,6 @@ export function Gameboard({ setOpen }) {
 
   function handleClick(piece) {
     if (firstClick) {
-      // console.log("Second click");
-      // console.log(currentFigure); //power 2
-      // console.log(piece); // power 3
-
       if (
         !checkForValidPosition(
           piece.x,
@@ -109,9 +105,6 @@ export function Gameboard({ setOpen }) {
             console.log(currentFigure.id);
             dispatch(setKilledFigure(currentFigure));
           }
-          //console.log("CF: " + currentFigure.title);
-          //console.log("P: " + piece.title);
-
           currentPlayer === "p1"
             ? dispatch(setCurrentPlayer("p2"))
             : dispatch(setCurrentPlayer("p1"));
@@ -146,11 +139,6 @@ export function Gameboard({ setOpen }) {
       }
       setFirstClick(false);
     } else {
-      /*if (piece.x === currentFigure.x && piece.y === currentFigure.y) {
-        dispatch(setCurrentFigure(0));
-        console.log("sajat");
-        return;
-      }*/
       if (dontAllowPlayer1(piece, currentPlayer)) return;
       if (dontAllowPlayer2(piece, currentPlayer)) return;
       if (piece.tile === "empty") {
@@ -159,9 +147,6 @@ export function Gameboard({ setOpen }) {
         return;
       }
       if (checkForBombSelected(piece)) return;
-
-      // console.log("First click");
-      //console.log(currentPlayer);
       setFirstClick(true);
       dispatch(setCurrentFigure(piece));
     }

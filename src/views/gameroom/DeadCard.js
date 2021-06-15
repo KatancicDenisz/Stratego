@@ -3,13 +3,7 @@ import { useSelector } from "react-redux";
 
 export function DeadCard({ deadcard }) {
   const killedFigure = useSelector((state) => state.killedFigure);
-  //console.log(killedFigure);
   const foundTitle = killedFigure.find((el) => el.title === deadcard.title);
-  // console.log(foundTitle);
-  //console.log(foundTitle);
-  //console.log(deadcard.id);
-
-  //Az a baj hogy nem egyformák az indexek
 
   return (
     <div

@@ -89,12 +89,11 @@ body {
 }
 
 #board {
-  margin: 2em auto;
-  width: 72vmin;
-  height: 72vmin;
+  margin-top: 2em;
   display: grid;
   grid-template-columns: repeat(6, 12vmin);
   grid-template-rows: repeat(6, 12vmin);
+  justify-content: center;
 }
 
 #board div {
@@ -235,4 +234,37 @@ body {
   margin-right: auto !important;
   display: block !important;
   margin-top: 10px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  #board {
+    grid-template-columns: repeat(6, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
+    justify-content: center;
+  }
+
+  .player1 > .card,
+  .player2 > .card,
+  .player1 > .card > img,
+  .player2 > .card > img {
+    width: 7vmin !important;
+    height: 7vmin !important;
+  }
+}
+
+@media screen and (max-width: 1041px) {
+  #board {
+    grid-template-columns: repeat(6, 8vmin);
+    grid-template-rows: repeat(6, 8vmin);
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .player1 > .card,
+  .player2 > .card,
+  .player1 > .card > img,
+  .player2 > .card > img {
+    width: 6vmin !important;
+    height: 6vmin !important;
+  }
 }

@@ -8,7 +8,7 @@ export function Mainpage({
   handleGoToMainpage,
 }) {
   return (
-    <>
+    <div className="pushable">
       <div className="ui huge top fixed text menu">
         <a className="item active" href="#home">
           Home
@@ -16,14 +16,8 @@ export function Mainpage({
         <a className="item" href="#jumpto">
           Játékszabály
         </a>
-        <div className="right menu">
-          <a className="item active">
-            <i className="volume up icon big"></i>
-            <i className="volume off icon"></i>
-          </a>
-        </div>
       </div>
-      <div className="pushable bgimage">
+      <div className="bgimagemain">
         <div className="ui text container">
           <h1 className="ui inverted header">
             <div className="ui container">
@@ -197,6 +191,6 @@ export function Mainpage({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

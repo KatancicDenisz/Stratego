@@ -42,66 +42,60 @@ export function Preparingroom({
   console.log("activebtn: " + activeBtn);
   console.log("delBoaard: " + deleteBoard);
   return (
-    <>
-      <div className="pushable">
-        <div className="pushable bgimage">
-          <div className="volume">
-            <i className="volume up icon big volumeicon"> </i>
-            <i className="volume off icon volumeicon big"> </i>
-          </div>
-          <div className="ui container">
-            <h1 className="prtitle">Készítsd el a felállásod!</h1>
-            <div className="ui stackable two column grid">
-              <div className="ui ten wide column">
-                <div id="board">
-                  <PrepareBoard
-                    boardSize={6}
-                    selectedFigure={selectedFigure}
-                    setSelectedFigure={(e) => setSelectedFigure(e)}
-                    setDeleteBoard={(del) => setDeleteBoard(del)}
-                    deleteBoard={deleteBoard}
-                  />
+    <div className="pushable">
+      <div className="bgimagepreparingroom">
+        <div className="ui container">
+          <h1 className="prtitle">Készítsd el a felállásod!</h1>
+          <div className="ui stackable two column grid">
+            <div className="ui ten wide column">
+              <div id="boardPreparingRoom">
+                <PrepareBoard
+                  boardSize={6}
+                  selectedFigure={selectedFigure}
+                  setSelectedFigure={(e) => setSelectedFigure(e)}
+                  setDeleteBoard={(del) => setDeleteBoard(del)}
+                  deleteBoard={deleteBoard}
+                />
+              </div>
+            </div>
+            <div className="ui six wide column middle aligned">
+              <div className="ui center aligned segment">
+                <div className="ui four cards">
+                  {cardsCollection.map((card) =>
+                    card.title !== "" ? (
+                      <Card
+                        key={card.id}
+                        card={card}
+                        onClick={(e) => handleHandClick(card)}
+                        id={card.id}
+                        selectedFigure={selectedFigure}
+                      />
+                    ) : null
+                  )}
                 </div>
               </div>
-              <div className="ui six wide column middle aligned">
-                <div className="ui center aligned segment">
-                  <div className="ui four cards">
-                    {cardsCollection.map((card) =>
-                      card.title !== "" ? (
-                        <Card
-                          key={card.id}
-                          card={card}
-                          onClick={(e) => handleHandClick(card)}
-                          id={card.id}
-                          selectedFigure={selectedFigure}
-                        />
-                      ) : null
-                    )}
-                  </div>
-                </div>
-                <div>
-                  <button
-                    className={
-                      !deleteBoard && activeBtn
-                        ? "ui primary centered big  button ready"
-                        : "ui primary centered big button disabled  ready"
-                    }
-                    onClick={() => {
-                      handleReadyClick(true);
-                      handleGoToMainpage(false);
-                      handleCreateGameclick(false);
-                      handleRoomCreateClick(false);
-                    }}
-                  >
-                    Kész
-                  </button>
-                  <button
-                    className="ui primary centered big button delete"
-                    onClick={() => deleteBoardContent()}
-                  >
-                    Felállás törlése
-                  </button>
-                </div>
+              <div className="centeredButtons">
+                <button
+                  className={
+                    !deleteBoard && activeBtn
+                      ? "ui primary centered medium  button ready"
+                      : "ui primary centered medium button disabled  ready"
+                  }
+                  onClick={() => {
+                    handleReadyClick(true);
+                    handleGoToMainpage(false);
+                    handleCreateGameclick(false);
+                    handleRoomCreateClick(false);
+                  }}
+                >
+                  Kész
+                </button>
+                <button
+                  className="ui primary centered medium button delete"
+                  onClick={() => deleteBoardContent()}
+                >
+                  Felállás törlése
+                </button>
               </div>
             </div>
           </div>
@@ -129,6 +123,6 @@ export function Preparingroom({
           www.flaticon.com
         </a>
       </div>
-    </>
+    </div>
   );
 }

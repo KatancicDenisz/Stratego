@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: black;
+  background-color: #060807;
   margin: 0;
 }
 
@@ -13,9 +13,11 @@ body {
 }
 
 .pushable {
-  height: 100%;
-  overflow-x: hidden;
-  padding: 0em !important;
+  backface-visibility: hidden;
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .lowered {
@@ -26,11 +28,13 @@ body {
   width: 60%;
 }
 
-.bgimage {
+.bgimagemain {
   background-image: url("../images/bg3.jpg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   z-index: 5;
+  width: 100%;
+  padding-bottom: 100px;
 }
 
 .ui.table thead th {
@@ -59,6 +63,7 @@ h2 {
   font-family: "Cormorant SC" !important;
   font-size: 2em !important;
   color: #daa520 !important;
+  word-wrap: break-word;
 }
 
 .startgame {
@@ -113,4 +118,10 @@ span {
 .ui.inverted.header {
   color: white;
   text-align: center;
+}
+
+@media only screen and (max-width: 630px) {
+  .subtitle {
+    font-size: 1em;
+  }
 }

@@ -17,16 +17,19 @@ body {
 }
 
 .pushable {
-  height: 100%;
-  overflow-x: hidden;
-  padding: 0em !important;
+  backface-visibility: hidden;
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
-.bgimage {
+.bgimagepreparingroom {
   background-image: url("../images/bg3.jpg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   z-index: 5;
+  width: 100%;
 }
 
 .ui.table thead th {
@@ -59,8 +62,8 @@ td {
 .prtitle {
   text-align: center;
   font-size: 50px;
-  margin: 0.7em !important;
   font-family: "Cormorant SC" !important;
+  margin-bottom: 20px;
 }
 
 .bg {
@@ -72,7 +75,7 @@ td {
   box-shadow: 2px 2px 2px 1px black;
 }
 
-.asd {
+.contextMenuWrap {
   width: 9vmin;
   height: 9vmin;
 }
@@ -134,21 +137,6 @@ td {
   opacity: 1 !important;
 }
 
-.ready {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: block !important;
-  width: 20vmin;
-  font-size: 2.6vmin !important;
-  float: left !important;
-}
-
-.delete {
-  float: right !important;
-  width: 25vmin;
-  font-size: 2.5vmin !important;
-}
-
 .player1 > .card {
   width: 9vmin;
   height: 9vmin;
@@ -156,6 +144,10 @@ td {
   opacity: 1;
   font-size: 6vmin;
   box-shadow: 2px 2px 2px 1px black;
+}
+
+.centeredButtons {
+  text-align: center;
 }
 
 .player1 > .card > img,
@@ -193,8 +185,8 @@ td {
 .notAllowedTile {
   font-size: 8vmin;
   color: black;
-  width: 6.5vmin;
-  height: 8vmin;
+  width: 80%;
+  height: auto;
 }
 
 .notEnoughCount {
@@ -210,16 +202,14 @@ td {
   opacity: 1;
 }
 
-#board {
-  margin: 2em auto;
-  width: 72vmin;
-  height: 72vmin;
+#boardPreparingRoom {
   display: grid;
   grid-template-columns: repeat(6, 12vmin);
   grid-template-rows: repeat(6, 12vmin);
+  justify-content: center;
 }
 
-#board div {
+#boardPreparingRoom div {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -227,13 +217,13 @@ td {
 }
 
 @media screen and (max-width: 1200px) {
-  /*.ui.celled.table {
-    width: 30em;
-    height: 10em;
+  #boardPreparingRoom {
+    grid-template-columns: repeat(6, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
   }
-  td {
-    height: 40px;
-  }*/
+  .ui.center.aligned.segment {
+    width: 100%;
+  }
 
   .ui.fluid.cards {
     max-width: 3em;
@@ -244,5 +234,63 @@ td {
   }
   .description {
     font-size: 0.7em;
+  }
+  .bg,
+  .contextMenuWrap,
+  .icontWithContext {
+    width: 7vmin;
+    height: 7vmin;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #boardPreparingRoom {
+    grid-template-columns: repeat(6, 8vmin);
+    grid-template-rows: repeat(6, 8vmin);
+  }
+
+  .ui.center.aligned.segment {
+    width: 100%;
+  }
+
+  .ui.fluid.cards {
+    max-width: 2em;
+  }
+
+  .rank {
+    font-size: 0.6em;
+  }
+  .description {
+    font-size: 0.5em;
+  }
+  .bg,
+  .contextMenuWrap,
+  .icontWithContext {
+    width: 6vmin;
+    height: 6vmin;
+    font-size: 5vmin;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bgimagepreparingroom {
+    background-position: top !important;
+  }
+  #boardPreparingRoom {
+    grid-template-columns: repeat(6, 12vmin);
+    grid-template-rows: repeat(6, 12vmin);
+  }
+  .ui.center.aligned.segment {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg,
+  .contextMenuWrap,
+  .icontWithContext {
+    width: 8vmin;
+    height: 8vmin;
+    font-size: 6vmin;
   }
 }
